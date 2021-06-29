@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "fastCode-app",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

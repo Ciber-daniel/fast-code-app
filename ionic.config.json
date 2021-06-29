@@ -1,0 +1,7 @@
+{
+  "name": "fastCode-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
