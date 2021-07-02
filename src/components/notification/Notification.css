@@ -1,0 +1,18 @@
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.notification h2 {
+  font-weight: bold;
+  font-size: small;
+}
+#search-icon,
+#sad-icon {
+  width: 5vw;
+  height: 5vw;
+}
