@@ -25,7 +25,7 @@ export default function Card(props: { picture: Picture }) {
 
   return loadedSrc !== "" ? (
     <IonCard className="cards" key={picture.id}>
-      <img src={loadedSrc} />
+      <img src={loadedSrc} alt="search_image" />
     </IonCard>
   ) : (
     <div
