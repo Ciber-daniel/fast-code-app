@@ -13,7 +13,6 @@ import { findPosts } from "../services/api-services";
 // interfaces
 import { Picture } from "../interfaces/picture.interfaces";
 
-// components
 import Card from "../components/card/Card";
 import Header from "../components/header/Header";
 import Notification from "../components/notification/Notification";
@@ -32,6 +31,14 @@ const Home: React.FC = () => {
     }
   }
 
+  const handleInput = (ev: any) => {
+    let query = "";
+    const target = ev.target;
+    if (target) query = target?.value!.toLowerCase();
+
+    setSearchText(query.trim());
+  };
+
   return (
     <IonPage id="home-page">
       <Header />
@@ -44,9 +51,7 @@ const Home: React.FC = () => {
           <div className="search">
             <IonSearchbar
               value={searchText}
-              onIonChange={(e) => {
-                setSearchText(e.detail.value!);
-              }}
+              onIonInput={(ev: any) => handleInput(ev)}
             />
             <IonButton className="search-button" type="submit">
               Buscar
